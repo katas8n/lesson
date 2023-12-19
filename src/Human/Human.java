@@ -11,13 +11,15 @@ public class Human {
     private String education;
     private double salary;
     private int expectedOnDestroy;
+    private String country;
 
     public Human (
         String name,
         int IQ,
         double salary,
         String education,
-        int expectedOnDestroy
+        int expectedOnDestroy,
+        String country
     ) {
         this.name = name;
         this.age = 0;
@@ -26,6 +28,7 @@ public class Human {
         this.salary = salary;
         this.expectedOnDestroy = expectedOnDestroy;
         this.props = new ArrayList<String>();
+        this.country = country;
     }
 
     public String getName() {
@@ -70,6 +73,10 @@ public class Human {
 
     public void setExpectedOnDestroy(int expectedOnDestroy) {
         this.expectedOnDestroy = expectedOnDestroy;
+    }
+
+    public String getCountry() {
+        return country;
     }
 }
 

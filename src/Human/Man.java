@@ -8,9 +8,10 @@ public class Man extends Human {
         int IQ,
         double salary,
         String education,
-        int expectedOnDestroy
+        int expectedOnDestroy,
+        String country
     ) {
-        super(name, IQ, salary, education, expectedOnDestroy);
+        super(name, IQ, salary, education, expectedOnDestroy, country);
     }
 
 

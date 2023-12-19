@@ -6,7 +6,7 @@ public class App {
         Boolean stillAlive = true; 
 
         while(stillAlive) {
-            System.out.println("Welcome to the game! You might choose : 'Do you wanna play out game or not' . Positive answers :\nYes\nYep\nOk");
+            System.out.println("Welcome to the game! You might choose : 'Do you wanna play our game or not' . Positive answers :\nYes\nYep\nOk");
             String userChoice = scanner.nextLine();
 
             switch(userChoice.toString().toLowerCase()) {
