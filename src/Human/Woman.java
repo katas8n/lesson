@@ -1,4 +1,5 @@
 package Human;
+import Country.Country;
 
 public class Woman extends Human {
     private String gender = "woman";
@@ -9,9 +10,10 @@ public class Woman extends Human {
         double salary,
         String education,
         int expectedOnDestroy,
-        String country
+        Country country
     ) {
         super(name, IQ, salary, education, expectedOnDestroy, country);
+        this.setExpectedOnDestroy(90);
     }
 
     public String getGender() {

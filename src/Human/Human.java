@@ -2,16 +2,18 @@ package Human;
 
 import java.util.ArrayList;
 
+import Country.Country;
+
 public class Human {
     
     private String name;
-    private int age;
+    private double age;
     private ArrayList<String> props;
     private int IQ;
     private String education;
     private double salary;
     private int expectedOnDestroy;
-    private String country;
+    private Country country;
 
     public Human (
         String name,
@@ -19,7 +21,7 @@ public class Human {
         double salary,
         String education,
         int expectedOnDestroy,
-        String country
+        Country country
     ) {
         this.name = name;
         this.age = 0;
@@ -39,7 +41,7 @@ public class Human {
         this.name = newName;
     }
 
-    public int getAge() {
+    public double getAge() {
         return this.age;
     }
 
@@ -75,8 +77,26 @@ public class Human {
         this.expectedOnDestroy = expectedOnDestroy;
     }
 
-    public String getCountry() {
+    public Country getCountry() {
         return country;
+    }
+
+    public void liveMonth() {
+        this.age += 0.1;
+    }
+
+    public void liveYear() {
+        this.age += 1;
+    }
+
+    public void getAllProps() {
+        System.out.println("[NAME]" + getName());
+        System.out.println("[AGE]" + getAge());
+        System.out.println("[PROPS]" + getProps());
+        System.out.println("[IQ]" + getIQ());
+        System.out.println("[EDUCATION]" + getEducation());
+        System.out.println("[EXPECTED_ON_DESTROY]" + getExpectedOnDestroy());
+        System.out.println("[COUNTRY]" + getCountry());
     }
 }
 

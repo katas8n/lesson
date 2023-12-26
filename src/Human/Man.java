@@ -1,5 +1,7 @@
 package Human;
 
+import Country.Country;
+
 public class Man extends Human {
     private String gender = "man";
 
@@ -9,9 +11,10 @@ public class Man extends Human {
         double salary,
         String education,
         int expectedOnDestroy,
-        String country
+        Country country
     ) {
         super(name, IQ, salary, education, expectedOnDestroy, country);
+        this.setExpectedOnDestroy(63);
     }
 
 

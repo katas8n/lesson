@@ -3,21 +3,19 @@ package utils;
 import java.util.Random;
 
 public class RandomTool {
-    public static Random intelligence() {
-        Random intelligenceProp = new Random(100);
+    public static int getRandomNumber(int min ,int max) {
+        boolean isInvalidNumber = true;
+        int intelligenceProp = 0;
+        
+        while(isInvalidNumber) {
+            intelligenceProp = new Random().nextInt();
+
+            if(intelligenceProp >= min && intelligenceProp <= max) {
+                isInvalidNumber = false;
+            }
+
+        }
 
         return intelligenceProp;
-    }
-
-    public static Random family() {
-        Random family = new Random(100);
-
-        return family;
-    }
-
-    public static Random chooseGender() {
-        Random gender = new Random(100);
-
-        return gender;
     }
 }
