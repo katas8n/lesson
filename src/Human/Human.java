@@ -14,6 +14,7 @@ public class Human {
     private double salary;
     private int expectedOnDestroy;
     private Country country;
+    public double wallet;
 
     public Human (
         String name,
@@ -31,6 +32,7 @@ public class Human {
         this.expectedOnDestroy = expectedOnDestroy;
         this.props = new ArrayList<String>();
         this.country = country;
+        this.wallet = 0;
     }
 
     public String getName() {
@@ -81,11 +83,11 @@ public class Human {
         return country;
     }
 
-    public void liveMonth() {
+    public void liveForMonth() {
         this.age += 0.1;
     }
 
-    public void liveYear() {
+    public void liveForYear() {
         this.age += 1;
     }
 
